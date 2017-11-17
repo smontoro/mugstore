@@ -18,7 +18,7 @@ var mugs = [bigMugs, meYou, anger, eighty, nobodycares, omg]
 
 	for (var i = 0; i < mugs.length; i++) {
 		var cardDiv = document.createElement('div')
-			cardDiv.className = "card text-center my-4"
+			cardDiv.className = "card text-center my-2 col-3 mx-3"
 		var newImg = document.createElement('img')
 			newImg.className = "card-img-top img-fluid"
 			newImg.src = mugs[i].image
@@ -40,7 +40,7 @@ var mugs = [bigMugs, meYou, anger, eighty, nobodycares, omg]
 			cardBodyDiv.appendChild(cardTitle)
 			cardBodyDiv.appendChild(cardText)
 			cardDiv.appendChild(cardButton)
-			document.getElementById('colDiv').appendChild(cardDiv)
+			document.getElementById('rowDiv').appendChild(cardDiv)
 
 	}	
 
