@@ -18,9 +18,10 @@ var mugs = [bigMugs, meYou, anger, eighty, nobodycares, omg]
 
 	for (var i = 0; i < mugs.length; i++) {
 		var cardDiv = document.createElement('div')
-			cardDiv.className = "card text-center my-2 col-3 mx-3"
+			cardDiv.className = "card text-center my-2 col-3 mx-2 p-2"
+			cardDiv.id = 'card' +[i]
 		var newImg = document.createElement('img')
-			newImg.className = "card-img-top img-fluid"
+			newImg.className = "card-img-top"
 			newImg.src = mugs[i].image
 		var cardBodyDiv = document.createElement("div")
 			cardBodyDiv.className = "card-body"

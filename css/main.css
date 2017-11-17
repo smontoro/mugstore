@@ -9,3 +9,20 @@ header {
 	color: white;
 }
 
+#card2 h4{
+	font-size: 22px;
+}
+
+#card2 img {
+	height: 58%;
+}
+
+#card4 img {
+	height: 61%;
+}
+
+footer {
+	background-color: tomato;
+	height: 100px;
+	width: 100%;
+}
