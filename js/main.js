@@ -18,70 +18,34 @@ var mugs = [bigMugs, meYou, anger, eighty, nobodycares, omg]
 
 	for (var i = 0; i < mugs.length; i++) {
 		var cardDiv = document.createElement('div')
-			cardDiv.className = "card"
+			cardDiv.className = "card text-center my-4"
 		var newImg = document.createElement('img')
-			newImg.className = "card-top img-fluid"
+			newImg.className = "card-img-top img-fluid"
 			newImg.src = mugs[i].image
 		var cardBodyDiv = document.createElement("div")
 			cardBodyDiv.className = "card-body"
 		var cardTitle = document.createElement("h4")
-			cardTitle.className = "card-title"
-			cardTitle = document.createTextNode(mugs[i].name)
+			cardTitle.className = "card-title text-center"
+		var	cardTitleText = document.createTextNode(mugs[i].name)
 		var cardText = document.createElement("p")
-			cardText.className = "card-text"
+			cardText.className = "card-text text-center"
 			cardText = document.createTextNode(mugs[i].price)
 		var cardButton = document.createElement("button")
 			cardButton.className = "btn btn-info"
 			cardButton.textContent = "Buy"
 
-			colDiv.appendChild(cardDiv)
 			cardDiv.appendChild(newImg)
 			cardDiv.appendChild(cardBodyDiv)
+			cardTitle.appendChild(cardTitleText)
 			cardBodyDiv.appendChild(cardTitle)
 			cardBodyDiv.appendChild(cardText)
-			cardBodyDiv.appendChild(cardButton)
+			cardDiv.appendChild(cardButton)
 			document.getElementById('colDiv').appendChild(cardDiv)
-
-
-
-
-
-
-		/*var mainDiv = document.getElementById('mainDiv')
-		var rowDiv = document.createElement('div')
-		rowDiv.className = 'row'
-		var colDiv = document.createElement('div')
-		colDiv.className = 'my-4 col-4'
-		var cardDiv = document.createElement('div')
-		cardDiv.className = 'card'
-		var newImg = document.createElement('img')
-		newImg.className = 'image-size'
-		var newH4 = document.createElement('h4')
-		var newP = document.createElement('p')
-		var newButton = document.createElement('button')
-		newButton.textContent="Buy"
-		newButton.className = 'btn btn-info'
-
-		newImg.src = mugs[i].image
-		newH4 = document.createTextNode(mugs[i].name)
-		newP = document.createTextNode(mugs[i].price)
-
-		cardDiv.appendChild(newImg)
-		cardDiv.appendChild(newH4)
-		cardDiv.appendChild(newP)
-		cardDiv.appendChild(newButton)
-		colDiv.appendChild(cardDiv)
-		rowDiv.appendChild(colDiv)
-		document.getElementById('mainDiv').appendChild(rowDiv)*/
 
 	}	
 
 
-
-
-
-
-
+//how can I get these mugs to line up??
 
 
 
