@@ -13,11 +13,41 @@ var nobodycares = new Mugs('img/nobodycares.jpg', 'Nobody Cares', '$9.00')
 var omg = new Mugs('img/omg.jpg', 'OMG', '$5.99')
 
 
-var mugs = [bigMugs, meYou]
+var mugs = [bigMugs, meYou, anger, eighty, nobodycares, omg]
 
 
 	for (var i = 0; i < mugs.length; i++) {
-		var mainDiv = document.getElementById('mainDiv')
+		var cardDiv = document.createElement('div')
+			cardDiv.className = "card"
+		var newImg = document.createElement('img')
+			newImg.className = "card-top img-fluid"
+			newImg.src = mugs[i].image
+		var cardBodyDiv = document.createElement("div")
+			cardBodyDiv.className = "card-body"
+		var cardTitle = document.createElement("h4")
+			cardTitle.className = "card-title"
+			cardTitle = document.createTextNode(mugs[i].name)
+		var cardText = document.createElement("p")
+			cardText.className = "card-text"
+			cardText = document.createTextNode(mugs[i].price)
+		var cardButton = document.createElement("button")
+			cardButton.className = "btn btn-info"
+			cardButton.textContent = "Buy"
+
+			colDiv.appendChild(cardDiv)
+			cardDiv.appendChild(newImg)
+			cardDiv.appendChild(cardBodyDiv)
+			cardBodyDiv.appendChild(cardTitle)
+			cardBodyDiv.appendChild(cardText)
+			cardBodyDiv.appendChild(cardButton)
+			document.getElementById('colDiv').appendChild(cardDiv)
+
+
+
+
+
+
+		/*var mainDiv = document.getElementById('mainDiv')
 		var rowDiv = document.createElement('div')
 		rowDiv.className = 'row'
 		var colDiv = document.createElement('div')
@@ -42,7 +72,29 @@ var mugs = [bigMugs, meYou]
 		cardDiv.appendChild(newButton)
 		colDiv.appendChild(cardDiv)
 		rowDiv.appendChild(colDiv)
-		document.getElementById('mainDiv').appendChild(rowDiv)
+		document.getElementById('mainDiv').appendChild(rowDiv)*/
 
 	}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
